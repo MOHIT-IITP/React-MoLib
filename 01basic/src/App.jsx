@@ -2,8 +2,12 @@ import Chai from "./Chai"
 import { useState } from "react"
 
 function App() {
-  let [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(0)
+
   const addValue = () => {
+    // this will print only one time
+    setCounter(counter + 1)
+    setCounter(counter + 1)
     setCounter(counter + 1)
   }
   
